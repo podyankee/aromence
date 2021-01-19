@@ -1,0 +1,84 @@
+// "extends": "airbnb",
+//     "env": {
+//         "browser": true,
+//         "node": true,
+//         "jquery": true
+// },
+
+//     "rules": {
+//     "no-unused-vars": [0,{"argsIgnorePartern": "res|next|~err"}],
+//     "arrow-body-style": ["error", "as-needed"],
+//     "no-param-reassign": 0,
+//     "eqeqeq": [
+//         "error",
+//         "smart"
+//     ],
+//     "no-shadow": "off",
+// 		"no-tabs": 0,
+//     "import/newline-after-import": ["error", { "count": 0 }],
+//     "no-console": 0,
+//     "import": 0,
+//     "func-names": 0,
+//     "space-before-function-paren": 0,
+//     "comma-dangle": 0,
+//     "max-len": 0,
+//     "no-underscore-dangle": 0,
+//     "react/prefer-es6-class": 0,
+//     "radix": 0,
+//     "indent": [1, "tab"],
+//     "react/jsx-indent": ["error", 4],
+//     "arrow-parens": [2, "as-needed"],
+//     "function-paren-newline": ["error", "consistent"],
+//     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+//     "react/prefer-stateless-function": "off",
+//     "no-use-before-define": ["error",{ "functions": false, "variables": false }],
+// 		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+// 	}
+
+{
+	"extends": ["airbnb", "eslint:recommended", "plugin:react/recommended"],
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true
+	},
+	"plugins": ["react", "jsx-a11y", "import"],
+	"parserOptions": {
+		"ecmaVersion": 7,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"classes": true
+		}
+	},
+	"rules": {
+		"arrow-body-style": "error",
+		"arrow-parens": "error",
+		"arrow-spacing": "error",
+		"eqeqeq": "error",
+		"generator-star-spacing": "error",
+		"no-duplicate-imports": "error",
+		"no-eq-null": "error",
+		"no-undefined": "error",
+		"no-useless-computed-key": "error",
+		"no-useless-constructor": "error",
+		"no-useless-rename": "error",
+		"no-var": "error",
+		"object-shorthand": "error",
+		"prefer-arrow-callback": "error",
+		"prefer-const": "error",
+		"prefer-rest-params": "error",
+		"prefer-spread": "error",
+		"prefer-template": "error",
+		"rest-spread-spacing": "off",
+		"semi": "error",
+		"template-curly-spacing": "error",
+		"yield-star-spacing": "error",
+		"react/prefer-stateless-function": [
+			"error",
+			{ "ignorePureComponents": true }
+		],
+		"react/jsx-indent": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"no-console": "warn"
+	}
+}

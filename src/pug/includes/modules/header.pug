@@ -1,0 +1,23 @@
+header.header
+	.container.header__container
+		.header__inner.header-inner
+			a(href="#").logo
+			nav.nav.header-nav
+				ul.nav__list
+					li.nav__item
+						a(href="#").nav__link Home
+					li.nav__item
+						a(href="#").nav__link About
+					li.nav__item
+						a(href="#").nav__link Shop
+			ul.user-list
+				li.user-list__item
+					form(action="#").user-list__form.search-form
+						button.search-form__btn
+							+icon('search')
+				li.user-list__item
+					a(href="#").user-list__link
+						+icon('user')
+				li.user-list__item
+					a(href="#").user-list__link
+						+icon('cart')

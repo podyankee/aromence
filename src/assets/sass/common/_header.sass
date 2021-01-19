@@ -1,0 +1,55 @@
+.header
+	color: $white-color
+	padding-top: 35px
+	padding-bottom: 35px
+	position: absolute
+	z-index: 100
+	width: 100%
+	top: 0
+	left: 0
+	&-inner
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	&-nav
+		margin-right: 208px
+
+.logo
+	+dem(125px, 17px)
+	background-image: url(../img/logo-sprite.png)
+	background-repeat: no-repeat
+	background-position: -10px -10px
+	margin-right: 318px
+
+.search-form__btn
+	padding: 0
+
+.nav
+	font-size: 18px
+	line-height: 20px
+	text-transform: uppercase
+	&__list
+		display: flex
+		align-items: center
+	&__item
+		&:not(:first-child)
+			margin-left: 90px
+.user-list
+	&__item
+		display: inline-block
+		line-height: 50px
+		&:not(:first-child)
+			margin-left: 25px
+.search-form__btn, .user-list__link
+	+dem(50px)
+	border-radius: 50%
+	background: transparent
+	text-align: center
+	transition: $trs
+	&:hover
+		background: $white-color
+		.icon-search,.icon-user
+			fill: #fd383e
+		.icon-cart
+			stroke: #fd383e
+
